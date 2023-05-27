@@ -83,3 +83,44 @@ body {
   position: fixed;
   transform: scale(0);
 }
+
+.btn {
+  height: rem(60);
+  font-size: rem(22);
+  color: var(--white);
+  @include fontMedium;
+  line-height: lh(22, 27);
+  background-color: var(--blue);
+  border-radius: rem(40);
+  transition: background-color 0.3s ease;
+
+  padding: 0 rem(45);
+
+  &:hover,
+  &:focus {
+    background-color: var(--purple);
+  }
+
+  &_gradient {
+    background-color: none;
+    background-image: linear-gradient(90deg, #a0d2db 0%, #726da8 100%);
+    z-index: 2;
+    position: relative;
+
+    &::before {
+      position: absolute;
+      border-radius: rem(40);
+      content: "";
+      inset: 0;
+      background-image: linear-gradient(-90deg, #a0d2db 0%, #726da8 100%);
+      z-index: -1;
+      opacity: 0;
+      transition: opacity 0.5s linear;
+    }
+
+    &:hover::before,
+    &:focus::before {
+      opacity: 1;
+    }
+  }
+}

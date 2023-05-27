@@ -1,0 +1,133 @@
+.article {
+  display: flex;
+
+  &_consultation:hover {
+    .article__main:first-child {
+      transform: translate(-100%);
+    }
+    .article__main:last-child {
+      transform: translate(-100%);
+    }
+  }
+
+  &__main {
+    min-width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: transform 0.4s ease;
+    background-color: var(--white);
+    position: relative;
+
+    padding: rem(48) rem(40) 0;
+
+    &_consultation {
+      background-image: url(../../img/info/dog_large.jpg);
+    }
+
+    &_about {
+      background-image: url(../../img/info/cat_large.jpg);
+    }
+  }
+
+  &__info {
+    position: absolute;
+    height: 50%;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #333333 100%);
+    top: 50%;
+    left: 0;
+
+    padding: rem(64) rem(40);
+  }
+
+  &__arrow {
+    width: rem(204);
+    height: rem(20);
+
+    margin-top: rem(34);
+  }
+
+  &__title {
+    font-size: rem(32);
+    color: var(--white);
+    @include fontSemibold;
+    line-height: lh(32, 40);
+
+    &_dark {
+      color: var(--blue);
+    }
+  }
+
+  &__price {
+    font-size: rem(40);
+    color: var(--light-blue-200);
+
+    margin-top: rem(24);
+  }
+
+  &__options {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+
+    padding-right: rem(120);
+    margin-top: rem(24);
+  }
+
+  &__option {
+    display: flex;
+    align-items: center;
+
+    margin-top: rem(24);
+
+    &:first-child {
+      margin-top: 0;
+    }
+
+    &-icon {
+      display: block;
+      width: rem(56);
+      height: rem(56);
+      flex-shrink: 0;
+
+      margin-right: rem(20);
+    }
+  }
+
+  &__btn {
+    margin-top: rem(56);
+  }
+
+  &__desc {
+    font-size: rem(24);
+    color: var(--white);
+    @include fontRegular;
+    line-height: lh(24, 30);
+
+    margin: rem(16) 0;
+  }
+
+  &__footer {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: var(--black);
+
+    padding: rem(20) rem(40);
+  }
+
+  &__link {
+    font-size: rem(24);
+    color: var(--white);
+    @include fontSemibold;
+    line-height: lh(24, 30);
+    transition: color 0.25s ease;
+
+    &:hover,
+    &:focus {
+      color: var(--purple);
+    }
+  }
+}

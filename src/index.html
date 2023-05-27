@@ -4,8 +4,8 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
 	<link rel="stylesheet" href="css/style.min.css">
-	<script src="js/main.min.js"></script>
 	<title>PetCare</title>
 </head>
 
@@ -61,6 +61,69 @@
 		</header>
 
 		<main class="content">
+			<section class="section slider">
+				<div class="container slider__container">
+					<h2 class="section-title visually-hidden">
+						Слайдер с услугами клиники
+					</h2>
+
+					<div class="slider__swiper swiper">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide slide slide_connect">
+								<div class="container slide__container">
+									<div class="slide__info">
+										<h2 class="slide__title">Мы заботимся
+											<br />
+											о ваших питомцах
+										</h2>
+										<p class="slide__text">
+											Записывайтесь в ветклиники
+											<br /> и консультируйтесь с ветеринарным врачом онлайн
+										</p>
+										<button class="slide__btn btn btn_gradient" type="button">Связаться с нами</button>
+									</div>
+									<div class="slide__photo">
+										<picture class="slide__picture">
+											<source srcset="./img/slider/cat_mobile.webp" media="(max-width: 480px)">
+											<source srcset="./img/slider/cat.webp" media="(max-width: 768px)">
+											<source srcset="./img/slider/cat_large.webp">
+											<img class="slide__img" src="./img/slider/cat_mobile.png" alt="Изображение кошки">
+										</picture>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide slide slide_plan">
+								<div class="container slide__container">
+									<div class="slide__info">
+										<h2 class="slide__title slide__title_dark">Закажите план заботы</h2>
+										<p class="slide__text slide__text_dark">
+											Регулярная доставка специально подобранного корма и других товаров для кошек и собак
+										</p>
+										<div class="slide__price">
+											от <span class="slide__price-count">1299</span> ₽/мес
+										</div>
+										<button class="slide__btn btn" type="button">Связаться с нами</button>
+									</div>
+									<div class="slide__photo">
+										<picture class="slide__picture">
+											<source srcset="./img/slider/dog_mobile.webp" media="(max-width: 480px)">
+											<source srcset="./img/slider/dog.webp" media="(max-width: 768px)">
+											<source srcset="./img/slider/dog_large.webp">
+											<img class="slide__img" src="./img/slider/dog_mobile.png" alt="Изображение собаки">
+										</picture>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-pagination"></div>
+						<div class="swiper-button-prev"></div>
+						<div class="swiper-button-next"></div>
+					</div>
+				</div>
+				<img class="slider__layer-left" src="./img/sprite.svg#angle">
+				<img class="slider__layer-right" src="./img/sprite.svg#angle">
+			</section>
+
 			<section class="section info">
 				<div class="container info__container">
 					<h2 class="section-title visually-hidden">Информация о клинике</h2>
@@ -152,6 +215,9 @@
 			</div>
 		</footer>
 	</div>
+
+	<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+	<script src="js/main.min.js"></script>
 </body>
 
 </html>

@@ -59,10 +59,17 @@
   }
 
   &__price {
-    font-size: rem(40);
+    font-size: rem(32);
     color: var(--light-blue-200);
+    @include fontSemibold;
+    line-height: lh(32, 39);
 
     margin-top: rem(24);
+
+    &-count {
+      font-size: rem(40);
+      line-height: lh(40, 49);
+    }
   }
 
   &__options {

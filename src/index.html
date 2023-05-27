@@ -80,7 +80,8 @@
 											Записывайтесь в ветклиники
 											<br /> и консультируйтесь с ветеринарным врачом онлайн
 										</p>
-										<button class="slide__btn btn btn_gradient" type="button">Связаться с нами</button>
+										<button class="slide__btn btn btn_gradient" type="button" id="goToContacts">Связаться с
+											нами</button>
 									</div>
 									<div class="slide__photo">
 										<picture class="slide__picture">
@@ -102,7 +103,7 @@
 										<div class="slide__price">
 											от <span class="slide__price-count">1299</span> ₽/мес
 										</div>
-										<button class="slide__btn btn" type="button">Связаться с нами</button>
+										<button class="slide__btn btn" id="openModal" type="button">Подобрать план</button>
 									</div>
 									<div class="slide__photo">
 										<picture class="slide__picture">
@@ -214,6 +215,47 @@
 				</div>
 			</div>
 		</footer>
+
+		<div class="modal">
+			<div class="modal__main">
+				<div class="modal__container">
+					<h2 class="modal__title">Чтобы подобрать план,
+						необходимо заполнить форму ниже</h2>
+					<p class="modal__text">У меня:</p>
+					<form class="modal__form" action="#" id="form">
+						<fieldset class="modal__fieldset modal__fieldset-radio">
+
+							<label class="modal__label">
+								<input class="modal__radio visually-hidden" type="radio" name="species" value="cat" checked>
+								<span class="modal__radio-span"></span>Кошка
+							</label>
+
+							<label class="modal__label">
+								<input class="modal__radio visually-hidden" type="radio" name="species" value="dog">
+								<span class="modal__radio-span"></span>Собака
+							</label>
+						</fieldset>
+
+						<fieldset class="modal__fieldset modal__fieldset-input">
+							<input class="modal__input" type="text" name="name" placeholder="Имя питомца">
+							<input class="modal__input" type="text" name="breed" required placeholder="Порода питомца">
+							<input class="modal__input" type="number" name="age" required placeholder="Возраст питомца">
+							<input class="modal__input" type="tel" name="phone" placeholder="Ваш номер телефона">
+							<input class="modal__input" type="email" name="email" required placeholder="Ваш email">
+						</fieldset>
+
+						<button class="modal__btn btn" type="submit">Отправить</button>
+					</form>
+
+
+					<button class="modal__close">
+						<svg class="modal__icon">
+							<use xlink:href="./img/sprite.svg#close"></use>
+						</svg>
+					</button>
+				</div>
+			</div>
+		</div>
 	</div>
 
 	<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>

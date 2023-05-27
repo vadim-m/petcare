@@ -1,0 +1,12 @@
+.footer {
+  &__container {
+    display: flex;
+    align-items: center;
+
+    padding: rem(50) 0;
+  }
+
+  &__copyright {
+    flex-grow: 1;
+  }
+}

@@ -1,0 +1,12 @@
+.copyright {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &__text {
+    font-size: rem(20);
+    color: var(--blue);
+    @include fontRegular;
+    line-height: lh(20, 24);
+  }
+}

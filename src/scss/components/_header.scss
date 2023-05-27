@@ -1,0 +1,12 @@
+.header {
+  &__container {
+    display: flex;
+    align-items: center;
+
+    padding: rem(48) 0 rem(32);
+  }
+
+  &__nav {
+    flex-grow: 1;
+  }
+}

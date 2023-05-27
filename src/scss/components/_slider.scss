@@ -1,0 +1,35 @@
+.slider {
+  min-height: rem(600);
+  position: relative;
+
+  &__container {
+    max-width: 1440px;
+    // Если надо на всю ширину экрана
+    // max-width: none;
+    position: relative;
+
+    padding: 0;
+  }
+
+  &__layer-left {
+    width: 50.5%;
+    position: absolute;
+    left: -2px;
+    bottom: -2px;
+    z-index: 5;
+  }
+
+  &__layer-right {
+    width: 50.5%;
+    position: absolute;
+    right: -2px;
+    bottom: -2px;
+    transform: rotateY(180deg);
+    z-index: 5;
+  }
+
+  &__swiper {
+    width: 100%;
+    min-height: rem(600);
+  }
+}

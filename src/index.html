@@ -10,83 +10,148 @@
 </head>
 
 <body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="container header__container">
+				<div class="header__logo logo">
+					<a href="./" class="logo__link">
+						<svg class="logo__icon">
+							<use xlink:href="./img/sprite.svg#logo"></use>
+						</svg>
+					</a>
+					<h1 class="logo__title">PetCare</h1>
+				</div>
+				<nav class="header__nav nav">
+					<ul class="nav__list">
+						<li class="nav__item">
+							<a href="#" class="nav__link">Новости</a>
+						</li>
+						<li class="nav__item">
+							<a href="#" class="nav__link">О нас</a>
+						</li>
+						<li class="nav__item">
+							<a href="#" class="nav__link">Блог</a>
+						</li>
+						<li class="nav__item">
+							<a href="#" class="nav__link">Услуги</a>
+						</li>
+						<li class="nav__item">
+							<a href="#" class="nav__link">Контакты</a>
+						</li>
+					</ul>
+				</nav>
+				<div class="header__socials socials">
+					<a href="https://instagram.com/" class="socials__link" target="_blank">
+						<svg class="socials__icon">
+							<use xlink:href="./img/sprite.svg#insta"></use>
+						</svg>
+					</a>
+					<a href="https://t.me/vadim_mm" class="socials__link" target="_blank">
+						<svg class="socials__icon">
+							<use xlink:href="./img/sprite.svg#telegram"></use>
+						</svg>
+					</a>
+					<a href="https://vk.com/" class="socials__link" target="_blank">
+						<svg class="socials__icon">
+							<use xlink:href="./img/sprite.svg#vk"></use>
+						</svg>
+					</a>
+				</div>
+			</div>
+		</header>
 
-	<body>
-		<div class="wrapper">
-			<header class="header">
-				<div class="container header__container">
-					<div class="header__logo logo">
-						<a href="./" class="logo__link">
-							<svg class="logo__icon">
-								<use xlink:href="./img/sprite.svg#logo"></use>
-							</svg>
-						</a>
-						<h1 class="logo__title">PetCare</h1>
-					</div>
-					<nav class="header__nav nav">
-						<ul class="nav__list">
-							<li class="nav__item">
-								<a href="#" class="nav__link">Новости</a>
-							</li>
-							<li class="nav__item">
-								<a href="#" class="nav__link">О нас</a>
-							</li>
-							<li class="nav__item">
-								<a href="#" class="nav__link">Блог</a>
-							</li>
-							<li class="nav__item">
-								<a href="#" class="nav__link">Услуги</a>
-							</li>
-							<li class="nav__item">
-								<a href="#" class="nav__link">Контакты</a>
-							</li>
-						</ul>
-					</nav>
-					<div class="header__socials socials">
-						<a href="https://instagram.com/" class="socials__link" target="_blank">
-							<svg class="socials__icon">
-								<use xlink:href="./img/sprite.svg#insta"></use>
-							</svg>
-						</a>
-						<a href="https://t.me/vadim_mm" class="socials__link" target="_blank">
-							<svg class="socials__icon">
-								<use xlink:href="./img/sprite.svg#telegram"></use>
-							</svg>
-						</a>
-						<a href="https://vk.com/" class="socials__link" target="_blank">
-							<svg class="socials__icon">
-								<use xlink:href="./img/sprite.svg#vk"></use>
-							</svg>
-						</a>
+		<main class="content">
+			<section class="section info">
+				<div class="container info__container">
+					<h2 class="section-title visually-hidden">Информация о клинике</h2>
+					<div class="info__content">
+
+						<article class="info__article article article_consultation">
+							<div class="article__main article__main_consultation">
+								<div class="article__info">
+									<h3 class="article__title">
+										Сколько стоит онлайн&#8209;консультация с терапевтом?
+									</h3>
+									<svg class="article__arrow">
+										<use xlink:href="./img/sprite.svg#arrow_r"></use>
+									</svg>
+								</div>
+							</div>
+							<div class="article__main">
+								<h3 class="article__title article__title_dark">
+									Онлайн-консультация с терапевтом
+								</h3>
+								<div class="article__price">
+									от <span class="article__price-count">399</span> ₽
+								</div>
+								<ul class="article__options">
+									<li class="article__option">
+										<svg class="article__option-icon">
+											<use xlink:href="./img/sprite.svg#option"></use>
+										</svg>
+										<p>Аудио, видео или чат</p>
+									</li>
+									<li class="article__option">
+										<svg class="article__option-icon">
+											<use xlink:href="./img/sprite.svg#option"></use>
+										</svg>
+										<p>Продолжительность до 60 минут</p>
+									</li>
+									<li class="article__option">
+										<svg class="article__option-icon">
+											<use xlink:href="./img/sprite.svg#option"></use>
+										</svg>
+										<p>Подробный отчет после консультации: что сделать сейчас, чтобы стало лучше</p>
+									</li>
+								</ul>
+								<button class="article__btn btn" type="button">
+									Начать консультацию
+								</button>
+							</div>
+						</article>
+
+						<article class="info__article article">
+							<div class="article__main article__main_about">
+								<div class="article__info">
+									<h3 class="article__title">
+										Самые болезненные породы кошек: топ-5
+									</h3>
+									<p class="article__desc">
+										Среди кошачьих пород есть несколько, отличающихся слабым здоровьем.
+									</p>
+									<div class="article__footer">
+										<a href="https://kipmu.ru/category/koshki/" class="article__link" target="_blank">
+											Все статьи о кошках
+										</a>
+									</div>
+								</div>
+							</div>
+						</article>
 					</div>
 				</div>
-			</header>
+			</section>
+		</main>
 
-			<main class="content">
-				<div class="container content__container">Main</div>
-			</main>
-
-			<footer class="footer">
-				<div class="container footer__container">
-					<div class="footer__contacts contacts">
-						<a class="contacts__phone" href="tel:+78009998877">8 (800) 999-88-77</a>
-						<a class="contacts__mail" href="mailto:info@petcare.com">info@petcare.com</a>
-					</div>
-					<div class="footer__copyright copyright">
-						<div class="copyright__text">©<span class="copyright__year">2021</span> PetCare. Все права защищены </div>
-					</div>
-					<div class="footer__logo logo">
-						<a href="./" class="logo__link">
-							<svg class="logo__icon">
-								<use xlink:href="./img/sprite.svg#logo"></use>
-							</svg>
-						</a>
-						<h3 class="logo__title">PetCare</h3>
-					</div>
+		<footer class="footer">
+			<div class="container footer__container">
+				<div class="footer__contacts contacts">
+					<a class="contacts__phone" href="tel:+78009998877">8 (800) 999-88-77</a>
+					<a class="contacts__mail" href="mailto:info@petcare.com">info@petcare.com</a>
 				</div>
-			</footer>
-		</div>
-	</body>
+				<div class="footer__copyright copyright">
+					<div class="copyright__text">©<span class="copyright__year">2021</span> PetCare. Все права защищены </div>
+				</div>
+				<div class="footer__logo logo">
+					<a href="./" class="logo__link">
+						<svg class="logo__icon">
+							<use xlink:href="./img/sprite.svg#logo"></use>
+						</svg>
+					</a>
+					<h3 class="logo__title">PetCare</h3>
+				</div>
+			</div>
+		</footer>
+	</div>
 </body>
 
 </html>

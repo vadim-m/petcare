@@ -15,8 +15,8 @@
   }
 
   &-button-next {
-    top: rem(50);
-    right: calc(50% - 608px);
+    top: rem(54);
+    right: calc(50% - 609px);
     transition: transform 0.2s ease;
 
     &:hover,
@@ -27,8 +27,8 @@
 
   &-button-prev {
     transform: rotateY(180deg);
-    top: rem(50);
-    left: calc(50% - 608px);
+    top: rem(54);
+    left: calc(50% - 609px);
     transition: transform 0.2s ease;
 
     &:hover,

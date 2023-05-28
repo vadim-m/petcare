@@ -19,16 +19,12 @@
 
   &_plan {
     background: linear-gradient(45deg, #9fc2d5, #d7e1e3, #b3c1c4);
-
-    .slide__picture {
-      position: relative;
-      top: 0;
-      left: -50px;
-    }
   }
 
   &__info {
     width: 50%;
+
+    margin-left: rem(10);
   }
 
   &__title {
@@ -67,6 +63,19 @@
     display: flex;
     align-items: flex-end;
     justify-content: center;
+  }
+
+  &__picture {
+    &_cat {
+      margin: 0 0 rem(40) rem(20);
+    }
+
+    &_dog {
+      position: relative;
+      top: 31px;
+      left: -42px;
+      transform: scale(1.1);
+    }
   }
 
   &__price {

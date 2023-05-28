@@ -2,6 +2,10 @@ const modal = document.querySelector(".modal");
 const openModalBtn = document.querySelector("#openModal");
 const showContactsBtn = document.querySelector("#goToContacts");
 
+const openMenuBtn = document.querySelector("#menuOpen");
+const closeMenuBtn = document.querySelector("#menuClose");
+const navigationEl = document.querySelector(".nav");
+
 const swiper = new Swiper(".swiper", {
   direction: "horizontal",
   loop: false,
@@ -16,11 +20,21 @@ const swiper = new Swiper(".swiper", {
   },
 });
 
-showContactsBtn.addEventListener("click", (e) => {
+openMenuBtn.addEventListener("click", () => {
+  navigationEl.classList.add("nav_active");
+  document.body.classList.add("no-scroll");
+});
+
+closeMenuBtn.addEventListener("click", () => {
+  navigationEl.classList.remove("nav_active");
+  document.body.classList.remove("no-scroll");
+});
+
+showContactsBtn.addEventListener("click", () => {
   window.scrollTo(0, document.body.scrollHeight);
 });
 
-openModalBtn.addEventListener("click", (e) => {
+openModalBtn.addEventListener("click", () => {
   modal.classList.add("modal_open");
 });
 

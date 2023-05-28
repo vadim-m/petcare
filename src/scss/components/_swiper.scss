@@ -17,12 +17,24 @@
   &-button-next {
     top: rem(50);
     right: calc(50% - 608px);
+    transition: transform 0.2s ease;
+
+    &:hover,
+    &:focus {
+      transform: scale(1.05);
+    }
   }
 
   &-button-prev {
     transform: rotateY(180deg);
     top: rem(50);
     left: calc(50% - 608px);
+    transition: transform 0.2s ease;
+
+    &:hover,
+    &:focus {
+      transform: rotateY(180deg) scale(1.05);
+    }
   }
 
   &-button-next::after,

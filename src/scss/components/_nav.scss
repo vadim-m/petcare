@@ -1,4 +1,35 @@
 .nav {
+  &_active {
+    transform: translateX(0);
+
+    .nav__list {
+      flex-direction: column;
+    }
+
+    .nav__item {
+      margin: rem(24) 0 0;
+
+      &:first-child {
+        margin: 0;
+      }
+    }
+
+    .nav__link {
+      font-size: rem(24);
+      color: var(--light-blue-200);
+      @include fontRegular;
+      line-height: lh(24, 29);
+      margin: 0;
+    }
+
+    .nav__close {
+      display: block;
+      position: fixed;
+      top: 5%;
+      right: 12%;
+    }
+  }
+
   &__list {
     display: flex;
     align-items: center;
@@ -57,5 +88,27 @@
       opacity: 0;
       transition: opacity 0.35s ease-in;
     }
+  }
+
+  &__close {
+    font-size: 0;
+    display: none;
+
+    padding: 0;
+
+    &:hover,
+    &:focus {
+      .nav__icon {
+        fill: var(--light-purple);
+      }
+    }
+  }
+
+  &__icon {
+    width: rem(32);
+    height: rem(32);
+    fill: var(--light-blue-100);
+
+    transition: fill 0.2s ease;
   }
 }

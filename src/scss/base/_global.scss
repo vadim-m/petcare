@@ -90,7 +90,7 @@ body {
   margin: 0 auto;
 
   @include phones {
-    padding: 0 rem(20);
+    padding: 0 rem(20, 14);
   }
 }
 
@@ -116,6 +116,14 @@ body {
     background-color: var(--purple);
   }
 
+  @include phones {
+    height: rem(40, 14);
+    font-size: rem(14, 14);
+    line-height: lh(14, 17);
+
+    padding: 0 rem(16, 14);
+  }
+
   &_gradient {
     background-color: none;
     background-image: linear-gradient(90deg, #a0d2db 0%, #726da8 100%);
@@ -138,6 +146,14 @@ body {
     &:hover::before,
     &:focus::before {
       opacity: 1;
+    }
+
+    @include phones {
+      height: rem(40, 14);
+      font-size: rem(14, 14);
+      line-height: lh(14, 17);
+
+      padding: 0 rem(16, 14);
     }
   }
 }

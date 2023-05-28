@@ -18,6 +18,11 @@
       height: rem(500);
       overflow: hidden;
     }
+
+    @include phones {
+      height: rem(500);
+      padding: 0 rem(20, 14);
+    }
   }
 
   &__layer-left {

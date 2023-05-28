@@ -8,6 +8,10 @@
     @include tablets {
       justify-content: space-between;
     }
+
+    @include phones {
+      padding: rem(30, 14) rem(20, 14);
+    }
   }
 
   &__burger {

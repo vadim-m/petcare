@@ -58,6 +58,12 @@ body {
   font-size: rem(16);
   line-height: 1.4;
   color: var(--text-color);
+
+  &.no-scroll {
+    position: fixed;
+    width: 100%;
+    overflow: hidden;
+  }
 }
 
 .wrapper {

@@ -4,15 +4,22 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
 	<link rel="stylesheet" href="css/style.min.css">
 	<title>PetCare</title>
 </head>
 
 <body>
-	<div class="wrapper">
+	<div class=" wrapper">
 		<header class="header">
 			<div class="container header__container">
+				<div class="header__burger burger-menu">
+					<button class="burger-menu__btn" id="menuOpen">
+						<svg class="burger-menu__icon">
+							<use xlink:href="./img/sprite.svg#burger_menu"></use>
+						</svg>
+					</button>
+				</div>
 				<div class="header__logo logo">
 					<a href="./" class="logo__link">
 						<svg class="logo__icon">
@@ -39,6 +46,11 @@
 							<a href="#" class="nav__link">Контакты</a>
 						</li>
 					</ul>
+					<button class="nav__close" id="menuClose">
+						<svg class="nav__icon">
+							<use xlink:href="./img/sprite.svg#close"></use>
+						</svg>
+					</button>
 				</nav>
 				<div class="header__socials socials">
 					<a href="https://instagram.com/" class="socials__link" target="_blank">
@@ -73,12 +85,12 @@
 								<div class="container slide__container">
 									<div class="slide__info">
 										<h2 class="slide__title">Мы заботимся
-											<br />
+											<br>
 											о ваших питомцах
 										</h2>
 										<p class="slide__text">
 											Записывайтесь в ветклиники
-											<br /> и консультируйтесь с ветеринарным врачом онлайн
+											<br> и консультируйтесь с ветеринарным врачом онлайн
 										</p>
 										<button class="slide__btn btn btn_gradient" type="button" id="goToContacts">Связаться с
 											нами</button>
@@ -121,8 +133,8 @@
 						<div class="swiper-button-next"></div>
 					</div>
 				</div>
-				<img class="slider__layer-left" src="./img/sprite.svg#angle">
-				<img class="slider__layer-right" src="./img/sprite.svg#angle">
+				<img class="slider__layer-left" src="./img/sprite.svg#angle" alt="Декоративное изображение">
+				<img class="slider__layer-right" src="./img/sprite.svg#angle" alt="Декоративное изображение">
 			</section>
 
 			<section class="section info">

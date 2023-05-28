@@ -1,0 +1,46 @@
+.logo {
+  display: flex;
+  align-items: center;
+
+  @include phones {
+    margin-right: rem(2, 14);
+  }
+
+  &__link {
+    font-size: 0;
+
+    &:hover,
+    &:focus {
+      .logo__icon {
+        fill: var(--light-purple);
+      }
+    }
+  }
+
+  &__icon {
+    width: rem(64);
+    height: rem(64);
+    fill: var(--purple);
+    transition: fill 0.2s ease-in;
+
+    @include phones {
+      width: rem(40);
+      height: rem(40);
+    }
+  }
+
+  &__title {
+    font-size: rem(28);
+    color: var(--text-color);
+    @include fontSemibold;
+    line-height: lh(28, 34);
+
+    margin-left: rem(20);
+
+    @include phones {
+      font-size: rem(16, 14);
+
+      margin-left: rem(13, 14);
+    }
+  }
+}

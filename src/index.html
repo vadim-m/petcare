@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+	<link rel="stylesheet" href="css/style.min.css">
+	<title>PetCare</title>
+</head>
+
+<body>
+	<div class=" wrapper">
+		<header class="header">
+			<div class="container header__container">
+				<div class="header__burger burger-menu">
+					<button class="burger-menu__btn" id="menuOpen">
+						<svg class="burger-menu__icon">
+							<use xlink:href="./img/sprite.svg#burger_menu"></use>
+						</svg>
+					</button>
+				</div>
+				<div class="header__logo logo">
+					<a href="./" class="logo__link">
+						<svg class="logo__icon">
+							<use xlink:href="./img/sprite.svg#logo"></use>
+						</svg>
+					</a>
+					<h1 class="logo__title">PetCare</h1>
+				</div>
+				<nav class="header__nav nav">
+					<ul class="nav__list">
+						<li class="nav__item">
+							<a href="#" class="nav__link">Новости</a>
+						</li>
+						<li class="nav__item">
+							<a href="#" class="nav__link">О нас</a>
+						</li>
+						<li class="nav__item">
+							<a href="#" class="nav__link">Блог</a>
+						</li>
+						<li class="nav__item">
+							<a href="#" class="nav__link">Услуги</a>
+						</li>
+						<li class="nav__item">
+							<a href="#" class="nav__link">Контакты</a>
+						</li>
+					</ul>
+					<button class="nav__close" id="menuClose">
+						<svg class="nav__icon">
+							<use xlink:href="./img/sprite.svg#close"></use>
+						</svg>
+					</button>
+				</nav>
+				<div class="header__socials socials">
+					<a href="https://instagram.com/" class="socials__link" target="_blank">
+						<svg class="socials__icon">
+							<use xlink:href="./img/sprite.svg#insta"></use>
+						</svg>
+					</a>
+					<a href="https://t.me/vadim_mm" class="socials__link" target="_blank">
+						<svg class="socials__icon">
+							<use xlink:href="./img/sprite.svg#telegram"></use>
+						</svg>
+					</a>
+					<a href="https://vk.com/" class="socials__link" target="_blank">
+						<svg class="socials__icon">
+							<use xlink:href="./img/sprite.svg#vk"></use>
+						</svg>
+					</a>
+				</div>
+			</div>
+		</header>
+
+		<main class="content">
+			<section class="section slider">
+				<div class="container slider__container">
+					<h2 class="section-title visually-hidden">
+						Слайдер с услугами клиники
+					</h2>
+
+					<div class="slider__swiper swiper">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide slide slide_connect">
+								<div class="container slide__container">
+									<div class="slide__info">
+										<h2 class="slide__title">Мы заботимся
+											<br>
+											о ваших питомцах
+										</h2>
+										<p class="slide__text">
+											Записывайтесь в ветклиники
+											<br> и консультируйтесь с ветеринарным врачом онлайн
+										</p>
+										<button class="slide__btn btn btn_gradient" type="button" id="goToContacts">Связаться с
+											нами</button>
+									</div>
+									<div class="slide__photo">
+										<picture class="slide__picture slide__picture_cat">
+											<source srcset="./img/slider/cat_mobile.webp" media="(max-width: 480px)">
+											<source srcset="./img/slider/cat.webp" media="(max-width: 768px)">
+											<source srcset="./img/slider/cat_large.webp">
+											<img class="slide__img" src="./img/slider/cat_mobile.png" alt="Изображение кошки">
+										</picture>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide slide slide_plan">
+								<div class="container slide__container">
+									<div class="slide__info">
+										<h2 class="slide__title slide__title_dark">Закажите план заботы</h2>
+										<p class="slide__text slide__text_dark">
+											Регулярная доставка специально подобранного корма и других товаров для кошек и собак
+										</p>
+										<div class="slide__price">
+											от <span class="slide__price-count">1299</span> ₽/мес
+										</div>
+										<button class="slide__btn btn" id="openModal" type="button">Подобрать план</button>
+									</div>
+									<div class="slide__photo">
+										<picture class="slide__picture slide__picture_dog">
+											<source srcset="./img/slider/dog_mobile.webp" media="(max-width: 480px)">
+											<source srcset="./img/slider/dog.webp" media="(max-width: 768px)">
+											<source srcset="./img/slider/dog_large.webp">
+											<img class="slide__img" src="./img/slider/dog_mobile.png" alt="Изображение собаки">
+										</picture>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-button-prev"></div>
+						<div class="swiper-button-next"></div>
+					</div>
+					<img class="slider__layer-left" src="./img/sprite.svg#angle" alt="Декоративное изображение">
+					<img class="slider__layer-right" src="./img/sprite.svg#angle" alt="Декоративное изображение">
+				</div>
+				<div class="swiper-pagination"></div>
+			</section>
+
+			<section class="section info">
+				<div class="container info__container">
+					<h2 class="section-title visually-hidden">Информация о клинике</h2>
+					<div class="info__content">
+
+						<article class="info__article article article_consultation">
+							<div class="article__main article__main_consultation">
+								<div class="article__info">
+									<h3 class="article__title">
+										Сколько стоит онлайн&#8209;консультация
+										<br> с терапевтом?
+									</h3>
+									<svg class="article__arrow">
+										<use xlink:href="./img/sprite.svg#arrow_r"></use>
+									</svg>
+								</div>
+							</div>
+							<div class="article__main">
+								<h3 class="article__title article__title_dark">
+									Онлайн-консультация <br> с терапевтом
+								</h3>
+								<div class="article__price">
+									от <span class="article__price-count">399</span> ₽
+								</div>
+								<ul class="article__options">
+									<li class="article__option">
+										<svg class="article__option-icon">
+											<use xlink:href="./img/sprite.svg#option"></use>
+										</svg>
+										<p>Аудио, видео или чат</p>
+									</li>
+									<li class="article__option">
+										<svg class="article__option-icon">
+											<use xlink:href="./img/sprite.svg#option"></use>
+										</svg>
+										<p>Продолжительность до 60 минут</p>
+									</li>
+									<li class="article__option">
+										<svg class="article__option-icon">
+											<use xlink:href="./img/sprite.svg#option"></use>
+										</svg>
+										<p>Подробный отчет после консультации: что сделать сейчас, чтобы стало лучше</p>
+									</li>
+								</ul>
+								<button class="article__btn btn" type="button">
+									Начать консультацию
+								</button>
+							</div>
+						</article>
+
+						<article class="info__article article">
+							<div class="article__main article__main_about">
+								<div class="article__info">
+									<h3 class="article__title">
+										Самые болезненные породы кошек: топ-5
+									</h3>
+									<p class="article__desc">
+										Среди кошачьих пород есть несколько, отличающихся слабым здоровьем.
+									</p>
+									<div class="article__footer">
+										<a href="https://kipmu.ru/category/koshki/" class="article__link" target="_blank">
+											Все статьи о кошках
+										</a>
+									</div>
+								</div>
+							</div>
+						</article>
+					</div>
+				</div>
+			</section>
+		</main>
+
+		<footer class="footer">
+			<div class="container footer__container">
+				<div class="footer__contacts contacts">
+					<a class="contacts__phone" href="tel:+78009998877">8 (800) 999-88-77</a>
+					<a class="contacts__mail" href="mailto:info@petcare.com">info@petcare.com</a>
+				</div>
+				<div class="footer__copyright copyright">
+					<div class="copyright__text">©<span class="copyright__year">2021</span> PetCare. <span
+							class="copyright__span">Все права защищены</span> </div>
+				</div>
+				<div class="footer__logo logo">
+					<a href="./" class="logo__link">
+						<svg class="logo__icon">
+							<use xlink:href="./img/sprite.svg#logo"></use>
+						</svg>
+					</a>
+					<h3 class="logo__title">PetCare</h3>
+				</div>
+			</div>
+		</footer>
+
+		<div class="modal">
+			<div class="modal__main">
+				<div class="modal__container">
+					<h2 class="modal__title">Чтобы подобрать план, <br>
+						необходимо заполнить форму ниже</h2>
+					<p class="modal__text">У меня:</p>
+					<form class="modal__form" action="#" id="form">
+						<fieldset class="modal__fieldset modal__fieldset-radio">
+
+							<label class="modal__label">
+								<input class="modal__radio visually-hidden" type="radio" name="species" value="cat" checked>
+								<span class="modal__radio-span"></span>Кошка
+							</label>
+
+							<label class="modal__label">
+								<input class="modal__radio visually-hidden" type="radio" name="species" value="dog">
+								<span class="modal__radio-span"></span>Собака
+							</label>
+						</fieldset>
+
+						<fieldset class="modal__fieldset modal__fieldset-input">
+							<input class="modal__input" type="text" name="name" placeholder="Имя питомца">
+							<input class="modal__input" type="text" name="breed" required placeholder="Порода питомца">
+							<input class="modal__input" type="number" name="age" required placeholder="Возраст питомца">
+							<input class="modal__input" type="tel" name="phone" placeholder="Ваш номер телефона">
+							<input class="modal__input" type="email" name="email" required placeholder="Ваш email">
+						</fieldset>
+
+						<button class="modal__btn btn" type="submit">Отправить</button>
+					</form>
+
+
+					<button class="modal__close">
+						<svg class="modal__icon">
+							<use xlink:href="./img/sprite.svg#close"></use>
+						</svg>
+					</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+	<script src="js/main.min.js"></script>
+</body>
+
+</html>

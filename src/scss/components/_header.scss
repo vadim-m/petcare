@@ -1,0 +1,50 @@
+.header {
+  &__container {
+    display: flex;
+    align-items: center;
+
+    padding: rem(48) rem(12) rem(32);
+
+    @include tablets {
+      justify-content: space-between;
+    }
+
+    @include phones {
+      padding: rem(28, 14) rem(20, 14) rem(34, 14);
+    }
+  }
+
+  &__burger {
+    display: none;
+
+    @include tablets {
+      display: block;
+    }
+  }
+
+  &__nav {
+    flex-grow: 1;
+    transition: transform 0.2s ease-in-out;
+
+    @include tablets {
+      position: fixed;
+      top: 0;
+      left: 0;
+      transform: translateX(-200vw);
+      width: 100vw;
+      height: 100vh;
+      z-index: 6;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      background-color: var(--blue);
+    }
+  }
+
+  &__socials {
+    @include tablets {
+      display: none;
+    }
+  }
+}

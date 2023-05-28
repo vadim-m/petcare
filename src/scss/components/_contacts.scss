@@ -1,0 +1,29 @@
+.contacts {
+  max-width: rem(230);
+  display: flex;
+  flex-wrap: wrap;
+
+  font-size: rem(24);
+  color: var(--purple);
+  @include fontMedium;
+  line-height: lh(24, 30);
+
+  &__phone {
+    transition: color 0.25s ease-in;
+
+    &:hover,
+    &:focus {
+      color: var(--light-purple);
+    }
+  }
+
+  &__mail {
+    transition: color 0.25s ease-in;
+    margin-top: rem(8);
+
+    &:hover,
+    &:focus {
+      color: var(--light-purple);
+    }
+  }
+}

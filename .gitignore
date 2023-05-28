@@ -1,0 +1,4 @@
+/node_modules
+/build
+/src/scss/global
+/src/scss/_local-fonts.scss

@@ -1,0 +1,61 @@
+.slider {
+  min-height: rem(600);
+  position: relative;
+
+  @include tablets {
+    min-height: rem(500);
+  }
+
+  &__container {
+    max-width: 1440px;
+    // Если надо на всю ширину экрана
+    // max-width: none;
+    position: relative;
+
+    padding: 0;
+
+    @include tablets {
+      height: rem(500);
+      overflow: hidden;
+    }
+
+    @include phones {
+      height: rem(500);
+      padding: 0 rem(20, 14);
+    }
+  }
+
+  &__layer-left {
+    width: 50.5%;
+    position: absolute;
+    left: -2px;
+    bottom: -2px;
+    z-index: 5;
+
+    @include tablets {
+      display: none;
+    }
+  }
+
+  &__layer-right {
+    width: 50.5%;
+    position: absolute;
+    right: -2px;
+    bottom: -2px;
+    transform: rotateY(180deg);
+    z-index: 5;
+
+    @include tablets {
+      display: none;
+    }
+  }
+
+  &__swiper {
+    width: 100%;
+    min-height: rem(600);
+
+    @include tablets {
+      min-height: rem(500);
+    }
+  }
+}

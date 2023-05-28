@@ -1,0 +1,56 @@
+// Миксины для шрифта
+@mixin fontRegular {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+}
+
+@mixin fontMedium {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+}
+
+@mixin fontSemibold {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+}
+
+// Миксины для Медиа-запросов
+// от 1200 до 1339.98
+@mixin large {
+  @media screen and (max-width: $large) {
+    @content;
+  }
+}
+// от 992 до 1199.98
+@mixin medium {
+  @media screen and (max-width: $medium) {
+    @content;
+  }
+}
+// от 576 до 991.98
+@mixin tablets {
+  @media screen and (max-width: $tablets) {
+    @content;
+  }
+}
+// от 0 до 575.98
+@mixin phones {
+  @media screen and (max-width: $phones) {
+    @content;
+  }
+}
+
+// Функция для перевода в rem
+@function rem($value, $current: 16) {
+  $remValue: calc($value / $current) + rem;
+  @return $remValue;
+}
+
+// Функция для перевода line-height
+@function lh($fz, $line) {
+  $value: calc($line / $fz);
+  @return $value;
+}

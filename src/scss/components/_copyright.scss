@@ -1,0 +1,22 @@
+.copyright {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: rem(20);
+  color: var(--blue);
+  @include fontRegular;
+  line-height: lh(20, 24);
+
+  margin-left: rem(-30);
+
+  &__text {
+    font-size: rem(20);
+    color: var(--blue);
+    @include fontRegular;
+    line-height: lh(20, 24);
+  }
+
+  &__span {
+    display: block;
+  }
+}

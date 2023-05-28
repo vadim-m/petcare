@@ -1,0 +1,255 @@
+.article {
+  display: flex;
+
+  &_consultation:hover {
+    .article__main:first-child {
+      transform: translate(-100%);
+
+      @include phones {
+        transform: translate(0);
+      }
+    }
+    .article__main:last-child {
+      transform: translate(-100%);
+
+      @include phones {
+        transform: translate(0);
+      }
+    }
+  }
+
+  &__main {
+    min-width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: transform 0.4s ease;
+    background-color: var(--white);
+    position: relative;
+
+    padding: rem(48) rem(40) 0;
+
+    @include phones {
+      padding: rem(32, 14) rem(20, 14);
+    }
+
+    &_consultation {
+      background-image: url(../../img/info/dog_large.jpg);
+
+      @include phones {
+        display: none;
+      }
+    }
+
+    &_about {
+      background-image: url(../../img/info/cat_large.jpg);
+
+      @include phones {
+        background-image: url(../../img/info/cat_mobile.jpg);
+      }
+    }
+  }
+
+  &__info {
+    position: absolute;
+    height: 50%;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #333333 100%);
+    top: 50%;
+    left: 0;
+
+    padding: rem(64) rem(40);
+
+    @include medium {
+      padding: rem(44) rem(40);
+    }
+
+    @include tablets {
+      padding: rem(36) rem(30);
+    }
+
+    @include phones {
+      padding: rem(40, 14) rem(20, 14);
+    }
+  }
+
+  &__arrow {
+    width: rem(230);
+    height: rem(20);
+
+    margin-top: rem(18);
+  }
+
+  &__title {
+    font-size: rem(32);
+    color: var(--white);
+    @include fontSemibold;
+    line-height: lh(32, 40);
+
+    &_dark {
+      color: var(--blue);
+
+      @include phones {
+        text-align: center;
+      }
+    }
+
+    @include tablets {
+      font-size: rem(24, 14);
+    }
+
+    @include phones {
+      font-size: rem(20, 14);
+      line-height: lh(20, 24);
+    }
+  }
+
+  &__price {
+    font-size: rem(32);
+    color: var(--light-blue-200);
+    @include fontSemibold;
+    line-height: lh(32, 39);
+
+    margin-top: rem(24);
+
+    @include phones {
+      font-size: rem(22, 14);
+      line-height: lh(22, 26);
+      text-align: center;
+
+      margin-top: rem(14, 14);
+    }
+
+    &-count {
+      font-size: rem(40);
+      line-height: lh(40, 49);
+
+      @include phones {
+        font-size: rem(22, 14);
+        line-height: lh(26, 32);
+      }
+    }
+  }
+
+  &__options {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+
+    padding-right: rem(30);
+    margin-top: rem(24);
+
+    @include phones {
+      padding-right: rem(4, 14);
+      margin-top: rem(16, 14);
+    }
+  }
+
+  &__option {
+    display: flex;
+    align-items: center;
+    font-size: rem(22);
+    color: var(--text-color);
+    @include fontRegular;
+    line-height: lh(22, 27);
+    margin-top: rem(24);
+
+    @include tablets {
+      font-size: rem(16, 14);
+    }
+
+    @include tablets {
+      font-size: rem(14, 14);
+      line-height: lh(14, 17);
+
+      margin-top: rem(16, 14);
+    }
+
+    &:first-child {
+      margin-top: 0;
+    }
+
+    &-icon {
+      display: block;
+      width: rem(56);
+      height: rem(56);
+      flex-shrink: 0;
+
+      margin-right: rem(20);
+
+      @include phones {
+        width: rem(32, 14);
+        height: rem(32, 14);
+
+        margin-right: rem(8, 14);
+      }
+    }
+  }
+
+  &__btn {
+    margin-top: rem(56);
+
+    @include tablets {
+      font-size: rem(14, 14);
+      margin: rem(30);
+    }
+
+    @include tablets {
+      display: block;
+      width: rem(220, 14);
+      margin: rem(44) auto 0;
+    }
+  }
+
+  &__desc {
+    font-size: rem(24);
+    color: var(--white);
+    @include fontRegular;
+    line-height: lh(24, 30);
+
+    margin: rem(16) 0;
+
+    @include tablets {
+      font-size: rem(18, 14);
+
+      margin: rem(8, 14) 0;
+    }
+
+    @include phones {
+      font-size: rem(14, 14);
+      line-height: lh(14, 17);
+    }
+  }
+
+  &__footer {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: var(--black);
+
+    padding: rem(20) rem(40);
+
+    @include phones {
+      padding: rem(10, 14) rem(20, 14);
+    }
+  }
+
+  &__link {
+    font-size: rem(24);
+    color: var(--white);
+    @include fontSemibold;
+    line-height: lh(24, 30);
+    transition: color 0.25s ease;
+
+    &:hover,
+    &:focus {
+      color: var(--purple);
+    }
+
+    @include phones {
+      font-size: rem(16, 14);
+      line-height: lh(16, 19);
+    }
+  }
+}

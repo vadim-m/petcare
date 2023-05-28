@@ -116,7 +116,7 @@
       line-height: lh(22, 26);
       text-align: center;
 
-      margin-top: rem(8, 14);
+      margin-top: rem(14, 14);
     }
 
     &-count {
@@ -161,6 +161,8 @@
     @include tablets {
       font-size: rem(14, 14);
       line-height: lh(14, 17);
+
+      margin-top: rem(16, 14);
     }
 
     &:first-child {
@@ -195,7 +197,7 @@
     @include tablets {
       display: block;
       width: rem(220, 14);
-      margin: rem(30) auto 0;
+      margin: rem(44) auto 0;
     }
   }
 

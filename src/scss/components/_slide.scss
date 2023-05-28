@@ -117,7 +117,7 @@
       font-size: rem(14, 14);
       line-height: lh(14, 17);
 
-      margin-top: rem(32);
+      margin-top: rem(20);
     }
   }
 
@@ -135,6 +135,13 @@
   &__picture {
     &_cat {
       margin: 0 0 rem(40) rem(20);
+
+      @include phones {
+        position: relative;
+        top: -30px;
+        left: 80px;
+        margin: 0;
+      }
     }
 
     &_dog {

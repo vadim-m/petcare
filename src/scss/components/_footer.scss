@@ -7,10 +7,42 @@
 
     @include tablets {
       flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+
+      .footer__logo {
+        order: 0;
+      }
+    }
+
+    @include phones {
+      padding: rem(34, 14) rem(14, 14) rem(60, 14);
     }
   }
 
   &__copyright {
     flex-grow: 1;
+  }
+
+  @include tablets {
+    .footer__logo {
+      order: 1;
+    }
+
+    .footer__contacts {
+      order: 2;
+      font-size: rem(22, 14);
+      line-height: lh(24, 29);
+      margin-top: rem(32, 14);
+    }
+
+    .footer__copyright {
+      order: 3;
+      font-size: rem(18, 14);
+      line-height: lh(18, 22);
+      margin-top: rem(38, 14);
+      margin-left: 0;
+    }
   }
 }

@@ -2,6 +2,10 @@
   display: flex;
   align-items: center;
 
+  @include phones {
+    margin-right: rem(2, 14);
+  }
+
   &__link {
     font-size: 0;
 
@@ -20,8 +24,8 @@
     transition: fill 0.2s ease-in;
 
     @include phones {
-      width: rem(36);
-      height: rem(36);
+      width: rem(40);
+      height: rem(40);
     }
   }
 

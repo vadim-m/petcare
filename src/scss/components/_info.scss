@@ -1,12 +1,17 @@
 .info {
   padding: rem(70) 0;
 
+  @include phones {
+    padding: rem(40, 14) 0;
+  }
+
   &__content {
     display: flex;
     gap: rem(32);
 
     @include phones {
       flex-direction: column;
+      gap: rem(38);
     }
   }
 

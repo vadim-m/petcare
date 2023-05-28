@@ -41,10 +41,10 @@
   }
 
   &__arrow {
-    width: rem(204);
+    width: rem(230);
     height: rem(20);
 
-    margin-top: rem(34);
+    margin-top: rem(18);
   }
 
   &__title {
@@ -78,14 +78,17 @@
     flex-wrap: wrap;
     align-items: flex-start;
 
-    padding-right: rem(120);
+    padding-right: rem(30);
     margin-top: rem(24);
   }
 
   &__option {
     display: flex;
     align-items: center;
-
+    font-size: rem(22);
+    color: var(--text-color);
+    @include fontRegular;
+    line-height: lh(22, 27);
     margin-top: rem(24);
 
     &:first-child {

@@ -24,7 +24,7 @@
   }
 
   &__main {
-    max-width: rem(590);
+    min-width: rem(590);
     background-color: var(--white);
     border-radius: rem(40);
     position: relative;
@@ -144,18 +144,24 @@
 
   &__btn {
     display: block;
-    margin: rem(48) auto 0;
+    font-size: rem(22);
+    color: var(--white);
+    @include fontMedium;
+    line-height: lh(22, 26);
+
+    margin: rem(44) auto 0;
+    padding: 0 rem(88);
   }
 
   &__close {
     position: absolute;
-    right: 5%;
-    top: 5%;
+    right: 3%;
+    top: 3%;
   }
 
   &__icon {
-    width: rem(32);
-    height: rem(32);
+    width: rem(40);
+    height: rem(40);
     fill: var(--blue);
   }
 }

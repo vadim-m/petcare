@@ -64,6 +64,7 @@
 
   &-pagination {
     display: none;
+    z-index: 5;
 
     @include tablets {
       display: block;

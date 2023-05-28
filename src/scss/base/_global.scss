@@ -88,6 +88,10 @@ body {
 
   padding: 0 rem(12);
   margin: 0 auto;
+
+  @include phones {
+    padding: 0 rem(20);
+  }
 }
 
 .visually-hidden {

@@ -18,6 +18,11 @@
     height: rem(64);
     fill: var(--purple);
     transition: fill 0.2s ease-in;
+
+    @include phones {
+      width: rem(36);
+      height: rem(36);
+    }
   }
 
   &__title {
@@ -27,5 +32,11 @@
     line-height: lh(28, 34);
 
     margin-left: rem(20);
+
+    @include phones {
+      font-size: rem(16, 14);
+
+      margin-left: rem(13, 14);
+    }
   }
 }

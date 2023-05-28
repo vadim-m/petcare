@@ -4,6 +4,10 @@
     align-items: center;
 
     padding: rem(50) rem(12);
+
+    @include tablets {
+      flex-direction: column;
+    }
   }
 
   &__copyright {

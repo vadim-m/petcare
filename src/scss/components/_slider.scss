@@ -2,6 +2,10 @@
   min-height: rem(600);
   position: relative;
 
+  @include tablets {
+    min-height: rem(500);
+  }
+
   &__container {
     max-width: 1440px;
     // Если надо на всю ширину экрана
@@ -9,6 +13,11 @@
     position: relative;
 
     padding: 0;
+
+    @include tablets {
+      height: rem(500);
+      overflow: hidden;
+    }
   }
 
   &__layer-left {
@@ -17,6 +26,10 @@
     left: -2px;
     bottom: -2px;
     z-index: 5;
+
+    @include tablets {
+      display: none;
+    }
   }
 
   &__layer-right {
@@ -26,10 +39,18 @@
     bottom: -2px;
     transform: rotateY(180deg);
     z-index: 5;
+
+    @include tablets {
+      display: none;
+    }
   }
 
   &__swiper {
     width: 100%;
     min-height: rem(600);
+
+    @include tablets {
+      min-height: rem(500);
+    }
   }
 }

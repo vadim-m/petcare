@@ -1,8 +1,12 @@
 .swiper {
   &-pagination-bullet {
-    background-color: red;
+    width: rem(16);
+    height: rem(16);
+    opacity: 1;
+    background-color: var(--light-blue-200);
+
     &-active {
-      background-color: blue;
+      background-color: var(--blue);
     }
   }
 
@@ -23,6 +27,14 @@
     &:focus {
       transform: scale(1.05);
     }
+
+    @include large {
+      right: calc(50% - 500px);
+    }
+
+    @include tablets {
+      display: none;
+    }
   }
 
   &-button-prev {
@@ -35,6 +47,14 @@
     &:focus {
       transform: rotateY(180deg) scale(1.05);
     }
+
+    @include large {
+      left: calc(50% - 500px);
+    }
+
+    @include tablets {
+      display: none;
+    }
   }
 
   &-button-next::after,
@@ -44,5 +64,10 @@
 
   &-pagination {
     display: none;
+
+    @include tablets {
+      display: block;
+      transform: translate(0, 40px);
+    }
   }
 }

@@ -3,6 +3,10 @@ html {
   font-size: 100%;
   box-sizing: border-box;
   scroll-behavior: smooth;
+
+  @include medium {
+    font-size: 87.5%;
+  }
 }
 
 *,

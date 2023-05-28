@@ -4,6 +4,14 @@
   flex-direction: column;
   background-color: var(--blue);
 
+  @include medium {
+    min-height: rem(660);
+  }
+
+  @include tablets {
+    min-height: rem(500);
+  }
+
   &__container {
     height: 100%;
     display: flex;
@@ -38,6 +46,10 @@
     &_dark {
       color: var(--blue);
     }
+
+    @include tablets {
+      font-size: rem(28, 14);
+    }
   }
 
   &__text {
@@ -48,6 +60,10 @@
     line-height: lh(30, 37);
 
     margin-top: rem(24);
+
+    @include tablets {
+      font-size: rem(20, 14);
+    }
 
     &_dark {
       color: var(--blue);

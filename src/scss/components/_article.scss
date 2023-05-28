@@ -38,6 +38,14 @@
     left: 0;
 
     padding: rem(64) rem(40);
+
+    @include medium {
+      padding: rem(44) rem(40);
+    }
+
+    @include tablets {
+      padding: rem(36) rem(30);
+    }
   }
 
   &__arrow {
@@ -55,6 +63,10 @@
 
     &_dark {
       color: var(--blue);
+    }
+
+    @include tablets {
+      font-size: rem(24, 14);
     }
   }
 
@@ -91,6 +103,10 @@
     line-height: lh(22, 27);
     margin-top: rem(24);
 
+    @include tablets {
+      font-size: rem(16, 14);
+    }
+
     &:first-child {
       margin-top: 0;
     }
@@ -107,6 +123,11 @@
 
   &__btn {
     margin-top: rem(56);
+
+    @include tablets {
+      font-size: rem(14, 14);
+      margin: rem(30);
+    }
   }
 
   &__desc {
@@ -116,6 +137,10 @@
     line-height: lh(24, 30);
 
     margin: rem(16) 0;
+
+    @include tablets {
+      font-size: rem(18, 14);
+    }
   }
 
   &__footer {

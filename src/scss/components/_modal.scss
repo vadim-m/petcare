@@ -32,6 +32,13 @@
     transition: opacity 0.4s 0.25s linear;
 
     padding: rem(48) rem(40);
+
+    @include phones {
+      min-width: rem(280, 14);
+      width: rem(280, 14);
+
+      padding: rem(40, 14) rem(20, 14) rem(10, 14);
+    }
   }
 
   &__container {
@@ -45,6 +52,11 @@
     @include fontSemibold;
     line-height: lh(22, 27);
     text-align: center;
+
+    @include phones {
+      font-size: rem(16, 14);
+      line-height: lh(16, 20);
+    }
   }
 
   &__text {
@@ -54,6 +66,13 @@
     line-height: lh(22, 27);
 
     margin-top: rem(32);
+
+    @include phones {
+      font-size: rem(16, 14);
+      line-height: lh(16, 24);
+
+      margin-top: rem(24, 14);
+    }
   }
 
   &__fieldset {
@@ -64,10 +83,21 @@
     &-radio {
       flex-direction: row;
       margin-top: rem(16);
+
+      @include phones {
+        font-size: rem(16, 14);
+        line-height: lh(16, 20);
+
+        margin: rem(8, 14) 0 0;
+      }
     }
 
     &-input {
       margin-top: rem(32);
+
+      @include phones {
+        margin: rem(16, 14) 0 0;
+      }
     }
   }
 
@@ -128,6 +158,13 @@
     padding: rem(9) 0;
     margin-top: rem(24);
 
+    @include phones {
+      font-size: rem(14, 14);
+      line-height: lh(14, 17);
+
+      margin: rem(12, 14) 0 0;
+    }
+
     &:first-child {
       margin-top: 0;
     }
@@ -151,6 +188,14 @@
 
     margin: rem(44) auto 0;
     padding: 0 rem(88);
+
+    @include phones {
+      width: rem(240, 14);
+      font-size: rem(14, 14);
+      line-height: lh(14, 17);
+
+      margin: rem(12, 14) 0 0;
+    }
   }
 
   &__close {

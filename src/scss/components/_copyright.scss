@@ -15,4 +15,8 @@
     @include fontRegular;
     line-height: lh(20, 24);
   }
+
+  &__span {
+    display: block;
+  }
 }

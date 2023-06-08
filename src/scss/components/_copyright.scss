@@ -17,6 +17,8 @@
   }
 
   &__span {
-    display: block;
+    @include phones {
+      display: block;
+    }
   }
 }

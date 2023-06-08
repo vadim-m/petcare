@@ -27,6 +27,7 @@
     @include phones {
       flex-direction: column;
       overflow: hidden;
+      position: relative;
 
       padding: 0;
     }
@@ -152,8 +153,11 @@
 
       @include phones {
         transform: scale(1);
-        top: -240px;
-        left: 76px;
+        position: absolute;
+        right: 0;
+        left: auto;
+        top: auto;
+        bottom: 0;
       }
     }
   }

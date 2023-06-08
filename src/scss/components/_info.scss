@@ -20,11 +20,12 @@
     flex: 1;
     background-color: var(--light-purple);
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
-    border-radius: 40px;
+    border-radius: rem(40);
     overflow: hidden;
 
     @include phones {
       min-height: rem(405, 14);
+      border-radius: rem(24, 14);
     }
   }
 }
